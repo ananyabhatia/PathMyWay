@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+</head>
+<body>
+
+Use boxes and button below to enter yourself as a mentor <br>
+<input type="text" id="mentorName" placeholder="Enter Name"> <br>
+<input type="text" id="mentorUni" placeholder="Enter University"> <br>
+<input type="text" id="mentorDept" placeholder="Enter Department"> <br>
+<input type="text" id="mentorEmail" placeholder="Enter Email"> <br>
+<button onclick="mentor()">Become a mentor</button> <br>
+<p id="mentorOut"></p> <br>
+
+Use boxes and button below to search for a mentor <br>
+<input type="text" id="searchUni" placeholder="Enter University"> <br>
+<input type="text" id="searchDept" placeholder="Enter Department"> <br>
+<button onclick="search()">Search for a mentor</button> <br>
+<p id="searchOut"></p> <br>
+
+Upload Resume Here <br>
+<input type="file" id="fileInput"> 
+<button id="readButton" onclick="readFile()">Read File</button>
+<p id="output"></p>
+
+
+
+Scholarship Filtering
+
+<input type="text" id="scholarshipfilterInput" placeholder="Filter scholarships...">
+  
+<ul id="scholarshipitemList" style="display: none;">
+    <li>John Smith Scholarship / Domestic Students / $4000 / Due July 3rd 2024</li>
+    <li>Jane Doe Scholarship / International Students / $3000 / Due August 15th 2024</li>
+    <li>Engineering Excellence Award / All Students / $5000 / Due June 30th 2024</li>
+    <li>Women in Science Scholarship / Female Students / $2500 / Due September 10th 2024</li>
+    <li>Community Leadership Grant / Local Students / $1500 / Due May 20th 2024</li>
+    <li>Global Opportunities Scholarship / International Students / $2000 / Due October 1st 2024</li>
+    <li>Environmental Sustainability Scholarship / All Students / $3000 / Due November 5th 2024</li>
+    <li>Computer Science Excellence Award / All Students / $3500 / Due August 30th 2024</li>
+    <li>Minority Empowerment Scholarship / Underrepresented Students / $2500 / Due September 25th 2024</li>
+    <li>Healthcare Future Leaders Grant / Medical Students / $4000 / Due July 15th 2024</li>
+    <li>Business Innovators Scholarship / Business Students / $3000 / Due June 10th 2024</li>
+    <li>Arts and Culture Fellowship / Arts Students / $2000 / Due August 20th 2024</li>
+    <li>Leadership in Healthcare Scholarship / Medical Students / $3500 / Due September 5th 2024</li>
+    <li>Women in STEM Scholarship / Female Students / $3000 / Due November 10th 2024</li>
+    <li>Leadership in Business Scholarship / Business Students / $2500 / Due July 25th 2024</li>
+    <li>Public Service Award / Social Sciences Students / $1500 / Due June 15th 2024</li>
+    <li>Technology Innovators Scholarship / Engineering Students / $4000 / Due September 30th 2024</li>
+    <li>Education for All Scholarship / All Students / $2000 / Due October 5th 2024</li>
+    <li>Future Medical Innovators Grant / Medical Students / $3000 / Due August 25th 2024</li>
+    <li>Environmental Leadership Scholarship / Environmental Studies Students / $3500 / Due July 20th 2024</li>
+    <li>Engineering Achievers Award / Engineering Students / $2500 / Due November 15th 2024</li>
+  </ul>
+
+<br><br>
+
+Application Deadlines: Enter a college name
+<input type="text" id="appfilterInput" placeholder="Filter deadlines by college...">
+<ul id="appitemList" style="display: none;">
+    <li>Duke University: Early decision application due November 1</li>
+    <li>Duke University: Regular decision application due January 2</li>
+    <li>Duke University: Transfer student application due March 15</li>
+    <li>Duke University: FAFSA due February 1</li>
+    <li>Harvard University: Early action application due November 1</li>
+    <li>Harvard University: Regular decision application due January 1</li>
+    <li>Harvard University: Transfer student application due March 1</li>
+    <li>Harvard University: FAFSA due February 15</li>
+    <li>Stanford University: Restrictive early action application due November 15</li>
+    <li>Stanford University: Regular decision application due January 3</li>
+    <li>Stanford University: Transfer student application due March 15</li>
+    <li>Stanford University: FAFSA due February 8</li>
+    <li>Massachusetts Institute of Technology (MIT): Early action application due November 1</li>
+    <li>Massachusetts Institute of Technology (MIT): Regular decision application due January 1</li>
+    <li>Massachusetts Institute of Technology (MIT): Transfer student application due March 15</li>
+    <li>Massachusetts Institute of Technology (MIT): FAFSA due February 15</li>
+    <li>University of California, Berkeley: Freshman application due November 30</li>
+    <li>University of California, Berkeley: Transfer student application due February 1</li>
+    <li>University of California, Berkeley: FAFSA due March 2</li>
+    <li>University of Oxford: Undergraduate application due October 15</li>
+    <li>University of Oxford: Graduate application due January 10</li>
+    <li>Princeton University: Single-Choice Early Action application due November 1</li>
+    <li>Princeton University: Regular Decision application due January 1</li>
+    <li>Princeton University: Transfer student application due March 1</li>
+    <li>Princeton University: FAFSA due February 15</li>
+    <li>Yale University: Single-Choice Early Action application due November 1</li>
+    <li>Yale University: Regular Decision application due January 2</li>
+    <li>Yale University: Transfer student application due March 15</li>
+    <li>Yale University: FAFSA due February 1</li>
+    <li>Columbia University: Early decision application due November 1</li>
+    <li>Columbia University: Regular decision application due January 5</li>
+    <li>Columbia University: Transfer student application due March 15</li>
+    <li>Columbia University: FAFSA due February 15</li>
+    <li>University of Cambridge: Undergraduate application due October 15</li>
+    <li>University of Cambridge: Graduate application due December 3</li>
+    <li>University of Michigan: Early action application due November 1</li>
+    <li>University of Michigan: Regular decision application due February 1</li>
+    <li>University of Michigan: Transfer student application due March 1</li>
+    <li>University of Michigan: FAFSA due March 15</li>
+    <li>California Institute of Technology (Caltech): Regular decision application due January 3</li>
+    <li>California Institute of Technology (Caltech): Transfer student application due March 1</li>
+    <li>California Institute of Technology (Caltech): FAFSA due February 15</li>
+    <li>University of Texas at Austin: Freshman application due December 1</li>
+    <li>University of Texas at Austin: Transfer student application due March 1</li>
+    <li>University of Texas at Austin: FAFSA due March 15</li>
+    <li>University of Sydney: Undergraduate application due September 30</li>
+    <li>University of Sydney: Graduate application due December 1</li>
+    <li>University of Toronto: Early action application due November 1</li>
+    <li>University of Toronto: Regular decision application due January 15</li>
+    <li>University of Toronto: Transfer student application due March 1</li>
+    <li>University of Toronto: FAFSA due February 1</li>
+    <li>University of Edinburgh: Undergraduate application due January 15</li>
+    <li>University of Edinburgh: Graduate application due March 1</li>
+    <li>University of Washington: Freshman application due November 15</li>
+    <li>University of Washington: Transfer student application due March 1</li>
+    <li>University of Washington: FAFSA due February 15</li>
+    <li>University of Melbourne: Undergraduate application due November 30</li>
+    <li>University of Melbourne: Graduate application due December 15</li>
+  </ul>
+
+
+<script type = "text/javascript" src="script.js"></script>
+
+
+</body>
+</html>
