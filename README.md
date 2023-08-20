@@ -1,6 +1,8 @@
 # Path My Way
 High School to College Helper for First-Gen Low-Income Students
 
+[Jump to user guide](#user-guide)
+
 ## About the Project
 
 ### Inspiration 🌟
