@@ -53,7 +53,7 @@ You will start on the home page. Navigate to our Mission page to see our mission
 4. **Resume Helper**: Please transfer your resume to a .txt file, as Word Documents or PDFs have formatting characters that make it hard to read. Then upload your document, and our website will give you some suggestions for some weak words that you can change. The website will also give some suggestions on stronger words.
 
 ### Setup and Execution Instructions
-We have used the pages feature of GitHub. You can navigate to https://ananyabhatia.github.io/PathMyWay/index.html in order to see our prototype. No download or setup needed, just click on the link. 
+We have used the pages feature of GitHub. You can navigate to https://ananyabhatia.github.io/PathMyWay in order to see our prototype. No download or setup needed, just click on the link. 
 
 ### Technologies and Tools used
 Technologies and tools used are VS Code, ChatGPT, and GeeksForGeeks for coding/hypothetical data generation. Data such as scholarship lists and mentors are purely fictional and hypothetical for this situation. 
